@@ -1,0 +1,1026 @@
+{
+  "current": {
+    "color_text": "#222222",
+    "color_body_text": "#757575",
+    "color_sale_text": "#EA0606",
+    "color_button": "#222222",
+    "color_button_text": "#ffffff",
+    "color_small_button_text_border": "#22242c",
+    "color_text_field_text": "#222222",
+    "color_text_field_border": "#cccccc",
+    "color_text_field": "#ffffff",
+    "color_image_overlay_text": "#ffffff",
+    "color_image_overlay": "#aaaaaa",
+    "image_overlay_opacity": 40,
+    "color_borders": "#ebebeb",
+    "color_body_bg": "#ffffff",
+    "type_header_font": "helvetica_n7",
+    "type_header_base_size": 30,
+    "type_base_font": "helvetica_n4",
+    "type_base_size": 18,
+    "predictive_search_show_vendor": true,
+    "predictive_search_show_price": false,
+    "share_facebook": false,
+    "share_twitter": false,
+    "share_pinterest": false,
+    "social_facebook_link": "https:\/\/www.facebook.com\/6thmanbasketball.au",
+    "social_instagram_link": "https:\/\/www.instagram.com\/6thmanbasketball.au\/",
+    "favicon": "shopify:\/\/shop_images\/6thmanB__NB.png",
+    "currency_code_enabled": true,
+    "checkout_logo_image": "shopify:\/\/shop_images\/WEB.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#1878b9",
+    "checkout_button_color": "#1878b9",
+    "checkout_error_color": "#e22120",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/6nike.png",
+          "logo_max_width": 200,
+          "main_linklist": "main-menu",
+          "message": false,
+          "home_page_only": false,
+          "message_text": "",
+          "message_link": "",
+          "color_bg": "#22242c",
+          "color_text": "#ffffff"
+        }
+      },
+      "feature-row": {
+        "type": "feature-row",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/catalogue-cover_f3fdefb1-0a23-4010-9a6e-18cfc138d9e1.png",
+          "layout": "left",
+          "title": "Download Catalogue",
+          "text": "",
+          "button_label": "Download",
+          "button_link": "shopify:\/\/pages\/catalogue"
+        }
+      },
+      "feature-columns": {
+        "type": "feature-columns",
+        "disabled": true,
+        "blocks": {
+          "feature-columns-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/NT0199_010_M_BB_STOCK_TEAM_PHSFM001.png",
+              "title": "",
+              "text": "<p>Kit yourself out for the court like a pro with our wide collection of basketball clothing<\/p>",
+              "button_label": "Adults",
+              "button_link": "shopify:\/\/collections\/adults"
+            }
+          },
+          "e9a3722a-30b6-46af-b968-1a0bbe36af2d": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/NT0200_010_Y_BB_STOCK_TEAM_PHSFM001.png",
+              "title": "",
+              "text": "<p>Shop the latest selection of Kids  Basketball Clothing from our extensive range of colours and sizes<\/p>",
+              "button_label": "Youth",
+              "button_link": "shopify:\/\/collections\/youth"
+            }
+          },
+          "7fa79e17-22a3-4770-a494-b4f0ed2648f7": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/YOUTH-PRODUCT-min.png",
+              "title": "",
+              "text": "",
+              "button_label": "Youth",
+              "button_link": "shopify:\/\/collections\/youth"
+            }
+          }
+        },
+        "block_order": [
+          "feature-columns-1",
+          "e9a3722a-30b6-46af-b968-1a0bbe36af2d",
+          "7fa79e17-22a3-4770-a494-b4f0ed2648f7"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "left"
+        }
+      },
+      "collection": {
+        "type": "collection",
+        "disabled": true,
+        "settings": {
+          "title": "",
+          "collection": "",
+          "grid": 5,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "quotes": {
+        "type": "quotes",
+        "disabled": true,
+        "blocks": {
+          "quotes-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "quotes-1": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "quotes-2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          }
+        },
+        "block_order": [
+          "quotes-0",
+          "quotes-1",
+          "quotes-2"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "image-bar": {
+        "type": "image-bar",
+        "disabled": true,
+        "blocks": {
+          "image-bar-0": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-1": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-2": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "0e528db2-2a12-4d3a-99fd-ae6f91d4eba5": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "image-bar-0",
+          "image-bar-1",
+          "image-bar-2",
+          "0e528db2-2a12-4d3a-99fd-ae6f91d4eba5"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "fb6c160d-d99e-4fca-b792-d0917a427b33": {
+            "type": "text",
+            "settings": {
+              "title": "6th Man Basketball",
+              "text": "<p><strong>Contact Us<\/strong><\/p><p><a href=\"tel:03-8542-7005\" title=\"Call Now\">0854 7005<\/a><\/p><p><\/p><p><a href=\"https:\/\/maps.apple.com\/?address=5%20Expo%20Ct,%20Mount%20Waverley%20VIC%203149,%20Australia&ll=-37.893565,145.128757&q=5%20Expo%20Ct&_ext=EiYplNeUhPPyQsAxZIiNJvAjYkA5FgJvKM3xQsBBNiAHZ00kYkBQAw%3D%3D\" title=\"Map Link\">5 Expo Court, Mt Waverley, VIC 3149<\/a><\/p>"
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "footer-1": {
+            "type": "newsletter",
+            "disabled": true,
+            "settings": {
+              "title": "Newsletter"
+            }
+          }
+        },
+        "block_order": [
+          "fb6c160d-d99e-4fca-b792-d0917a427b33",
+          "footer-0",
+          "footer-1"
+        ],
+        "settings": {
+          "show_payment_icons": true,
+          "color_footer_bg": "#ffffff",
+          "color_footer_text": "#000000",
+          "show_currency_selector": false,
+          "show_locale_selector": false
+        }
+      },
+      "16322894708929753d": {
+        "type": "custom-content",
+        "blocks": {
+          "16322894708929753d-0": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "<p>Welcome to 6th Man Basketball. A good 6th Man provides support and coverage. A great 6th Man is game changing. <br\/>Nike Teamwear Basketball is customisable, so for the first time in Australia and only at 6th Man - it's Nike your way.<\/p>",
+              "width": "100%",
+              "alignment": "top-middle",
+              "align_text": "center"
+            }
+          },
+          "0f93a715-6bcc-48eb-a6e5-cf51cc1043e9": {
+            "type": "html",
+            "settings": {
+              "code": "<a class=\"btn\" href=\"\/collections\/all\">Shop now<\/a>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "16322894708929753d-0",
+          "0f93a715-6bcc-48eb-a6e5-cf51cc1043e9"
+        ],
+        "settings": {
+          "title": "Exclusive home of custom Nike basketball teamwear"
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": 3
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 3,
+          "rows": 2,
+          "show_collection_image": true,
+          "show_vendor": true,
+          "sort_enable": true,
+          "tags_enable": true
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": true,
+          "show_vendor": true,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "media_size": "large",
+          "enable_image_zoom": true,
+          "enable_video_looping": false
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like",
+          "show_vendor": true
+        }
+      },
+      "16329004817cdeb136": {
+        "type": "steps",
+        "disabled": true,
+        "settings": {}
+      },
+      "product-template-alternate": {
+        "type": "product-template-alternate",
+        "settings": {
+          "show_quantity_selector": false,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "media_size": "large",
+          "enable_image_zoom": true,
+          "enable_video_looping": false
+        }
+      },
+      "16409457392150e264": {
+        "type": "slideshow",
+        "blocks": {
+          "16409457392150e264-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Artboard_1.png",
+              "alignment": "center center",
+              "slide_title": "",
+              "subheading": "",
+              "button_label": "",
+              "button_link": "shopify:\/\/collections\/youth"
+            }
+          },
+          "16409457392150e264-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Artboard_2_66c6e6bd-09a1-4527-aa11-272f07125251.png",
+              "alignment": "center center",
+              "slide_title": "",
+              "subheading": "",
+              "button_label": "",
+              "button_link": "shopify:\/\/collections\/jerseys"
+            }
+          },
+          "8a21f2f7-a1fe-4a6b-92a3-7cd51314602b": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Carousel-0-min.png",
+              "alignment": "center center",
+              "slide_title": "",
+              "subheading": "",
+              "button_label": "",
+              "button_link": "shopify:\/\/collections\/all"
+            }
+          }
+        },
+        "block_order": [
+          "16409457392150e264-1",
+          "16409457392150e264-0",
+          "8a21f2f7-a1fe-4a6b-92a3-7cd51314602b"
+        ],
+        "settings": {
+          "slideshow_height": "adapt",
+          "text_size": "medium",
+          "text_alignment": "center center",
+          "show_overlay": false,
+          "autorotate": true,
+          "autorotate_speed": 7
+        }
+      },
+      "1640946035cdea1d1c": {
+        "type": "featured-shopping-carousel",
+        "blocks": {
+          "5de8fca8-10c2-4b82-a0b6-e1dd7e9dc037": {
+            "type": "button",
+            "settings": {
+              "subtitle": "Jerseys",
+              "image": "shopify:\/\/shop_images\/ADULTS-PRODUCT-min.png",
+              "anchor": "center",
+              "theme": "light",
+              "url": "shopify:\/\/collections\/jerseys",
+              "campaign": "",
+              "mobile_full_width": false,
+              "video_webm": "",
+              "video_mp4": "",
+              "timed_promo_activate": "",
+              "timed_promo_deactivate": ""
+            }
+          },
+          "bcd0af8d-5e3e-4804-adf8-041673f01dbd": {
+            "type": "button",
+            "settings": {
+              "subtitle": "Off Court",
+              "image": "shopify:\/\/shop_images\/ADULTS-OFFCOURT-min.png",
+              "anchor": "center",
+              "theme": "light",
+              "url": "shopify:\/\/collections\/warm-up",
+              "campaign": "",
+              "mobile_full_width": false,
+              "video_webm": "",
+              "video_mp4": "",
+              "timed_promo_activate": "",
+              "timed_promo_deactivate": ""
+            }
+          },
+          "b3d934c4-e187-425e-8082-859db87ed209": {
+            "type": "button",
+            "settings": {
+              "subtitle": "Youth",
+              "image": "shopify:\/\/shop_images\/YOUTH-PRODUCT-min.png",
+              "anchor": "center",
+              "theme": "light",
+              "url": "shopify:\/\/collections\/youth",
+              "campaign": "",
+              "mobile_full_width": false,
+              "video_webm": "",
+              "video_mp4": "",
+              "timed_promo_activate": "",
+              "timed_promo_deactivate": ""
+            }
+          },
+          "53514bcf-daed-46e9-87ae-a173135bbce3": {
+            "type": "button",
+            "settings": {
+              "subtitle": "Shorts",
+              "image": "shopify:\/\/shop_images\/2._Shorts.jpg",
+              "anchor": "center",
+              "theme": "light",
+              "url": "shopify:\/\/collections\/shorts",
+              "campaign": "",
+              "mobile_full_width": false,
+              "video_webm": "",
+              "video_mp4": "",
+              "timed_promo_activate": "",
+              "timed_promo_deactivate": ""
+            }
+          }
+        },
+        "block_order": [
+          "5de8fca8-10c2-4b82-a0b6-e1dd7e9dc037",
+          "bcd0af8d-5e3e-4804-adf8-041673f01dbd",
+          "b3d934c4-e187-425e-8082-859db87ed209",
+          "53514bcf-daed-46e9-87ae-a173135bbce3"
+        ],
+        "settings": {
+          "limit_width": true,
+          "heading": ""
+        }
+      },
+      "16450154911da24697": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/CUSTOM.png",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "x-large",
+          "text_size": "medium",
+          "title": "",
+          "text": "",
+          "button_label": "",
+          "button_link": "shopify:\/\/collections\/jerseys"
+        }
+      },
+      "164528210283139441": {
+        "type": "hero",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/4_Steps_-_Mobile_Layout.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "adapt",
+          "text_size": "medium",
+          "title": "",
+          "text": "",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "1645526915648facde": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Artboard_40.png",
+          "alignment": "bottom",
+          "hero_layout": "full_width",
+          "hero_size": "adapt",
+          "text_size": "medium",
+          "title": "",
+          "text": "",
+          "button_label": "",
+          "button_link": "shopify:\/\/collections\/jerseys"
+        }
+      },
+      "1648459915e52a436c": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/FOOTER-min.png",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "x-large",
+          "text_size": "medium",
+          "title": "LOOKING TO OUTFIT YOUR WHOLE CLUB?",
+          "text": "<p>GET IN CONTACT WITH ONE OF OUR TEAM TODAY TO SEE OUR FULL PRODUCT OFFERING AND PRICE LIST<\/p>",
+          "button_label": "Contact Us",
+          "button_link": "shopify:\/\/pages\/contact"
+        }
+      },
+      "16484602475a4a1fcf": {
+        "type": "slideshow",
+        "blocks": {
+          "16484602475a4a1fcf-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Artboard_2_a47de2c3-bd85-4117-8544-9629ffdb3be2.png",
+              "alignment": "center center",
+              "slide_title": "",
+              "subheading": "",
+              "button_label": "",
+              "button_link": "shopify:\/\/collections\/youth"
+            }
+          },
+          "ecf7c0a9-69e4-4293-9531-0e9f6c745572": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/MOBILE.png",
+              "alignment": "center center",
+              "slide_title": "",
+              "subheading": "",
+              "button_label": "",
+              "button_link": "shopify:\/\/collections\/all"
+            }
+          },
+          "16484602475a4a1fcf-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/MOBILE-BANNER-3-min.png",
+              "alignment": "center center",
+              "slide_title": "",
+              "subheading": "",
+              "button_label": "",
+              "button_link": "shopify:\/\/collections\/all"
+            }
+          }
+        },
+        "block_order": [
+          "16484602475a4a1fcf-1",
+          "ecf7c0a9-69e4-4293-9531-0e9f6c745572",
+          "16484602475a4a1fcf-0"
+        ],
+        "settings": {
+          "slideshow_height": "adapt",
+          "text_size": "medium",
+          "text_alignment": "center center",
+          "show_overlay": true,
+          "autorotate": true,
+          "autorotate_speed": 5
+        }
+      },
+      "164846141792ef8bd1": {
+        "type": "custom-content",
+        "blocks": {
+          "164846141792ef8bd1-0": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "title": "Talk about your brand",
+              "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "164846141792ef8bd1-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PRODUCT-min.png",
+              "width": "100%",
+              "alignment": "center"
+            }
+          },
+          "cc0f7052-2ae9-4cd5-8334-f618a05c0198": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/4_Steps_-_Mobile_Layout.jpg",
+              "width": "100%",
+              "alignment": "center"
+            }
+          },
+          "11c7d9d5-ecfb-45fc-b2de-3d85db44cef5": {
+            "type": "html",
+            "settings": {
+              "code": "<a class=\"btn\" href=\"\/collections\/all\">Customise now<\/a>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "164846141792ef8bd1-0",
+          "164846141792ef8bd1-1",
+          "cc0f7052-2ae9-4cd5-8334-f618a05c0198",
+          "11c7d9d5-ecfb-45fc-b2de-3d85db44cef5"
+        ],
+        "settings": {
+          "title": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "16409457392150e264",
+      "16484602475a4a1fcf",
+      "16322894708929753d",
+      "16450154911da24697",
+      "1645526915648facde",
+      "164528210283139441",
+      "164846141792ef8bd1",
+      "16329004817cdeb136",
+      "feature-columns",
+      "1640946035cdea1d1c",
+      "feature-row",
+      "1648459915e52a436c"
+    ],
+    "blocks": {
+      "15132424025755801183": {
+        "type": "shopify:\/\/apps\/upload-lift-image-upload\/blocks\/app-embed\/3c98bdcb-7587-4ade-bfe4-7d8af00d05ca",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "hero-1": {
+          "type": "hero",
+          "settings": {
+            "hero_size": "large",
+            "text_size": "large"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {}
+        },
+        "feature-columns": {
+          "type": "feature-columns",
+          "blocks": {
+            "feature-columns-0": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-1": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-2": {
+              "type": "text_block",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "feature-columns-0",
+            "feature-columns-1",
+            "feature-columns-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "grid": 4
+          }
+        },
+        "hero-2": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "quotes": {
+          "type": "quotes",
+          "blocks": {
+            "quotes-0": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-1": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-2": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "quotes-0",
+            "quotes-1",
+            "quotes-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "image-bar": {
+          "type": "image-bar",
+          "blocks": {
+            "image-bar-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-1": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-2": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "image-bar-0",
+            "image-bar-1",
+            "image-bar-2"
+          ],
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "footer-1": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ],
+          "settings": {
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+        "hero-1",
+        "feature-row",
+        "feature-columns",
+        "collection",
+        "hero-2",
+        "quotes",
+        "image-bar"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_vendor": false,
+            "show_share_buttons": true,
+            "media_size": "medium",
+            "enable_image_zoom": true,
+            "enable_video_looping": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {}
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {}
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {
+            "color_footer_bg": "#f8f8f8",
+            "color_footer_text": "#6d6d6d"
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}

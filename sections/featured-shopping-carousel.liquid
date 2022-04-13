@@ -1,0 +1,288 @@
+<div class="feature-buttons-carousel" data-section-id="{{ section.id }}" data-section-type="feature-buttons-carousel">
+  {%- if section.settings.heading != blank -%}
+  	<h4 class="h2">{{ section.settings.heading }}</h4>
+  {%- endif -%}
+  {%- if section.blocks.size > 0 -%}
+    <div class="carousel feature-buttons-carousel-wrapper">
+      {% for block in section.blocks %}
+        {% if block.settings.image != blank and block.settings.url != blank %}
+          {%- assign campaign_string = '?pid=' -%}
+          {%- if block.settings.url contains '?' -%}
+            {%- assign campaign_string = '&pid=' -%}
+          {%- endif -%}
+          {%- if block.settings.campaign != blank -%}
+            {%- assign campaign_name = block.settings.campaign | url_encode -%}
+            {%- assign campaign_string = campaign_string | append: campaign_name -%}
+          {%- endif -%}      
+            {%- assign slide_enabled = true -%}
+            {%- if block.settings.timed_promo_activate != blank or block.settings.timed_promo_deactivate != blank -%}
+              {%- assign slide_enabled = false -%}
+              {%- assign current_date = "now" | date: "%Y%m%d%H%M" | plus: 0 -%}
+              {%- assign start_date = block.settings.timed_promo_activate | date: "%Y%m%d%H%M" | plus: 0 | default: 0 -%}
+              {%- assign end_date = 999999999999 -%}
+              {%- if block.settings.timed_promo_deactivate != blank -%}
+                {%- assign end_date = block.settings.timed_promo_deactivate | date: "%Y%m%d%H%M" | plus: 0 -%}
+              {%- endif -%}
+              {%- if start_date <= current_date and current_date < end_date -%}
+                {%- assign slide_enabled = true -%}
+              {%- endif -%}
+            {%- endif -%}
+            {%- if slide_enabled -%}
+	      <div id="carousel-cell-{{ block.id }}" class="carousel-cell">
+            <a class="carousel-cell-wrapper" href="{{ block.settings.url }}{% if block.settings.campaign != blank %}{{ campaign_string }}{% endif %}" onClick="gtmPromotionClicks('btn-{{ block.settings.title | handle }}', 'Home Button: {{ block.settings.title | replace: "'", "\'" | replace: "&", ""}}', '', 1, '{{ block.settings.url }}{% if block.settings.campaign != blank %}{{ campaign_string }}{% endif %}')">
+              {%- if block.settings.video_webm != blank or block.settings.video_mp4 != blank -%}
+                <video autoplay loop muted playsinline>
+                  {%- if block.settings.video_webm != blank -%}
+                  <source src="{{ block.settings.video_webm }}" type="video/webm; codecs=vp9,vorbis">
+                  {%- endif -%}
+                  {%- if block.settings.video_mp4 != blank -%}
+                  <source src="{{ block.settings.video_mp4 }}" type="video/mp4">
+                  {%- endif -%}
+              {%- endif -%}               
+                  {%comment%}{% include 'img' with block.settings.image, blur: true, imgclass: 'lazypreload' %}{%endcomment%}
+                  <a href="{{ block.settings.url }}{% if block.settings.campaign != blank %}{{ campaign_string }}{% endif %}">{% include 'img' with block.settings.image, blur: true, data-sizes: auto, imgclass: 'lazyload' %}</a>
+
+              {%- if block.settings.video_webm != blank or block.settings.video_mp4 != blank -%}
+                </video>
+              {%- endif -%}
+            </a>
+            <a class="carousel-cell-wrapper" href="{{ block.settings.url }}{% if block.settings.campaign != blank %}{{ campaign_string }}{% endif %}" onClick="gtmPromotionClicks('btn-{{ block.settings.title | handle }}', 'Home Button: {{ block.settings.title | replace: "'", "\'" | replace: "&", ""}}', '', 1, '{{ block.settings.url }}{% if block.settings.campaign != blank %}{{ campaign_string }}{% endif %}')">      
+            {%- if block.settings.subtitle != blank -%}
+            	<div class="feature-button__details">
+                	<div style="margin: 0 .25em;"><a class="btn" href="{{ block.settings.url }}{% if block.settings.campaign != blank %}{{ campaign_string }}{% endif %}">{{ block.settings.subtitle }}</a></div>
+                </div>
+            {%- endif -%}
+             </a>
+          </div>
+         {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+  {
+    "name": "Featured Shop Carousel",
+    "class": "feature-buttons-carousel",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "limit_width",
+        "label": "Limit to content width",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "button",
+        "name": "Featured tiles",
+        "settings": [
+          {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "select",
+            "id": "anchor",
+            "label": "Anchor to",
+            "options": [
+              {
+                "value": "center",
+                "label": "Middle"
+              },
+              {
+                "value": "top-center",
+                "label": "Top"
+              },
+              {
+                "value": "top-center-middle",
+                "label": "Middle Top"
+              },
+              {
+                "value": "top-right",
+                "label": "Top Right"
+              },
+              {
+                "value": "center-right",
+                "label": "Right"
+              },
+              {
+                "value": "bottom-right",
+                "label": "Bottom Right"
+              },
+              {
+                "value": "bottom-center",
+                "label": "Bottom"
+              },
+              {
+                "value": "bottom-center-middle",
+                "label": "Middle Bottom"
+              },
+              {
+                "value": "bottom-left",
+                "label": "Bottom Left"
+              },
+              {
+                "value": "center-left",
+                "label": "Left"
+              },
+              {
+                "value": "top-left",
+                "label": "Top Left"
+              }
+            ],
+            "default": "center"
+          },
+          {
+            "type": "select",
+            "id": "theme",
+            "label": "Text colour scheme",
+            "default": "light",
+            "options": [
+              {
+                "value": "light",
+                "label": "Light"
+              },
+              {
+                "value": "dark",
+                "label": "Dark"
+              },
+			  {
+				"value":"full-fade",
+				"label":"Full Fade"
+			  }
+            ]
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "Link to"
+          },
+          {
+            "type": "text",
+            "id": "campaign",
+            "label": "Analytics Campaign Name"
+          },
+		      {
+            "type": "checkbox",
+            "id": "mobile_full_width",
+            "label": "Full width on small screens",
+		        "default": false
+          },
+          {
+            "type": "header",
+            "content": "Video",
+            "info": "Videos can be uploaded to the files area in site settings. They must be encoded correctly! Talk to your developer!"
+          },
+          {
+            "type": "text",
+            "id": "video_webm",
+            "label": "WebM Video URL"
+          },
+          {
+            "type": "text",
+            "id": "video_mp4",
+            "label": "MP4 Video URL"
+          },
+          {
+            "type": "text",
+            "id": "timed_promo_activate",
+            "label": "Activation Date/Time",
+            "info": "Date/Time that this slide will become visible. MUST be in the format: DD-MM-YYYY HH:MM"
+          },
+          {
+            "type": "text",
+            "id": "timed_promo_deactivate",
+            "label": "Deactivation Date/Time",
+            "info": "Date/Time that this slide will deactivate. If end date is not required, leave blank. MUST be in the format: DD-MM-YYYY HH:MM"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured Shop Carousel",
+        "category": "Content"
+      }
+    ]
+  }
+{% endschema %}
+<style type="text/css">
+.feature-buttons-carousel {
+  text-align: center;  
+  box-sizing: border-box; 
+/*   width: 90vw; */
+  margin: 0 auto;
+}
+.feature-buttons-carousel .carousel {
+  background: #fff;
+  margin: 1em 0;
+}
+.feature-buttons-carousel .carousel-cell {
+  margin-right: 16px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  width: 80%;
+} 
+@media (min-width:600px){ 
+  .feature-buttons-carousel .carousel-cell {
+  	width: 50%; 
+  }
+}  
+@media (min-width:900px){
+  .feature-buttons-carousel .carousel-cell {
+    width: 33%; 
+  }
+}
+@media (min-width: 1024px){
+  .feature-buttons-carousel .carousel-cell {
+	width: 33% !important;
+  }
+}
+.feature-buttons-carousel .feature-button__details {
+  position: relative; 
+  z-index: 99;
+  bottom: 3em;
+  left: 1em;
+  text-align: left;
+  display: block;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.feature-buttons-carousel .flickity-viewport {
+  height: 600px;  
+}     
+.feature-buttons-carousel img, 
+.feature-buttons-carousel video {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+} 
+</style>
+<script>
+$(document).ready(function(){
+  $('.feature-buttons-carousel-wrapper').flickity({
+    autoPlay: 7000,
+    cellAlign: 'center',
+    contain: true,
+    wrapAround: true,
+    pageDots: false,
+    imagesLoaded: true,
+    lazyLoad: true,
+//     prevNextButtons: false,
+    bgLazyLoad: true
+  });
+});
+</script>

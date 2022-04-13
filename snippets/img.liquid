@@ -1,0 +1,113 @@
+{%- assign size_template = '{width}x' | escape -%}
+{%- assign template_width = 123 -%}
+{%- assign base_width = 180 -%}
+
+{%- assign template_placeholder = template_width | append: 'x' -%}
+{%- assign base_size = base_width | append: 'x' -%}
+{%- assign crop = crop | default: false -%}
+{%- assign crop_template = '' -%}
+{%- assign crop_placeholder = '_crop_' | append: crop | append: '.' -%}
+{%- if crop != blank -%}
+  {%- assign size_template = size_template | append: '{height}' | escape -%}
+  {%- assign crop_template = '_crop_{crop}.' | escape -%}
+  {%- assign base_size = base_size | append: '1' -%}
+  {% comment %}{%- assign blur = true -%}
+  {%- assign scale = true -%}{% endcomment %}
+  {%- assign fade = true -%}
+{%- endif -%}
+
+{%- if img.src != blank -%}
+  {%- assign image_template_url = img | img_url: template_placeholder, crop: crop | replace: template_placeholder, size_template | replace: crop_placeholder, crop_template -%}
+  {%- assign image_placeholder_url = img | img_url: base_size, crop: crop -%}
+{%- elsif file_url -%}
+  {%- assign image_template_url = img | file_img_url: template_placeholder, crop: crop | replace: template_placeholder, size_template | replace: crop_placeholder, crop_template -%}
+  {%- assign image_placeholder_url = img | file_img_url: base_size, crop: crop -%}
+{%- else -%}
+  {%- assign image_template_url = img | asset_img_url: template_placeholder, crop: crop | replace: template_placeholder, size_template | replace: crop_placeholder, crop_template -%}
+  {%- assign image_placeholder_url = img | asset_img_url: base_size, crop: crop -%}
+{%- endif -%}
+
+{%- if class == blank -%}
+  {%- assign class = '' -%}
+{%- endif -%}
+
+{%- assign img-class = '' -%}
+
+{%- if imgclass != blank -%}
+{%- assign img-class = img-class | append: imgclass -%}
+{%- endif -%}
+
+{%- unless maxwidth -%}
+  {%- assign maxwidth = img.width | append: 'px' | default: 'none' -%}
+{%- endunless -%}
+{%- unless maxheight -%}
+  {%- assign maxheight = img.height | append: 'px' | default: 'none' -%}
+{%- endunless -%}
+
+{%- if alt == blank and img.alt != blank -%}
+  {%- assign alt = img.alt -%}
+{%- endif -%}
+
+{%- if placeholder == blank -%}
+  {%- assign placeholder = 'image' -%}
+{%- endif -%}
+
+{%- if blur == true and placeholder == 'image' -%}
+  {%- assign img-class = img-class | prepend: 'blur-up ' -%}
+{%- endif -%}
+
+{%- if scale == true and placeholder == 'image' -%}
+  {%- assign img-class = img-class | prepend: 'scale-in ' -%}
+{%- endif -%}
+
+{%- unless fade == false or placeholder == 'image' -%}
+  {%- assign img-class = img-class | prepend: 'fade-in ' -%}
+{%- endunless -%}
+
+{%- unless placeholder == false -%}
+<span class="lazyload-image {% if placeholder == 'image' %}lazyload--image-placeholder{% else %}lazyload--empty-placeholder{% endif %} {{ class }}" style="max-width: {{ maxwidth }}; max-height: {{ maxheight }};">
+{%- endunless -%}
+
+  <img class="lazyload {{ img-class }}"
+    {%- if id != blank %} id="{{ id }}" {% endif -%}
+    {%- if width != blank %} width="{{ width }}" {% endif -%}
+    {%- if placeholder == 'image' %} src="{{ image_placeholder_url }}" {% else %} src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" {% endif -%}
+    data-srcset="{{ image_template_url }}"
+    {%- if widths %} data-widths="[{{ widths }}]" {% endif -%}
+    {%- if crop %} data-crop="{{ crop }}" {% endif -%}
+    data-sizes="auto"
+    data-optimumx="1.6"
+    data-originalheight="{{ img.height }}"
+    data-originalwidth="{{ img.width }}"
+    data-parent-fit="cover"
+    alt="{{ alt | escape }}" {{ attributes }}>
+  
+  {%- unless placeholder == 'image' or placeholder == false -%}
+  <span class="lazyload-placeholder" style="padding-bottom: {{ 1 | divided_by: img.aspect_ratio | times: 100.0 | round: 3 }}%"></span>
+  {%- endunless -%}
+  
+  {%- if spinner -%}
+  <span class="lazyload-spinner"></span>
+  {%- endif -%}
+
+{%- unless placeholder == false -%}
+</span>
+{%- endunless -%}
+
+{%- assign class = null -%}
+{%- assign imgclass = null -%}
+{%- assign maxwidth = null -%}
+{%- assign maxheight = null -%}
+{%- assign alt = null -%}
+{%- assign placeholder = null -%}
+{%- assign spinner = null -%}
+{%- assign img = null -%}
+{%- assign blur = null -%}
+{%- assign scale = null -%}
+{%- assign template_placeholder = null -%}
+{%- assign base_width = null -%}
+{%- assign base_size = null -%}
+{%- assign crop = null -%}
+{%- assign crop_template = null -%}
+{%- assign crop_placeholder = null -%}
+{%- assign file_url = null -%}
